@@ -15,6 +15,9 @@ app.use(express_1.default.json());
 app.use(body_parser_1.default.json());
 app.use('/music', music_1.default);
 app.use('/artist', artist_1.default);
+app.get('/', (req, res) => {
+    res.send('home');
+});
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
