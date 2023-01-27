@@ -9,12 +9,20 @@ const musicSchema = new mongoose.Schema({
     type: Array,
     required: true,
   },
+  category: {
+    type: Array,
+    required: true,
+  },
+  bpm: {
+    type: Number,
+    required: true,
+  },
   album: {
     type: String,
     required: false,
   },
-  category: {
-    type: Array,
+  camelot: {
+    type: String,
     required: true,
   },
   year: {
@@ -23,4 +31,4 @@ const musicSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model('Musics', musicSchema);
+export default mongoose.model('Music', musicSchema);

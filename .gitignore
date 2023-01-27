@@ -1,3 +1,5 @@
 /node_modules
 .env
 .vscode
+notes.txt
+package-lock.json
