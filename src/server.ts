@@ -14,6 +14,10 @@ app.use('/music', musicRouter);
 
 app.use('/artist', artistRouter);
 
+app.get('/', (req, res) => {
+  res.send('home');
+})
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
