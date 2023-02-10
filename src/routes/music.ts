@@ -1,11 +1,18 @@
 import express, { Request, Response } from 'express';
-import { createMusic, getMusic } from '../controllers/music';
+import {
+  createMusic,
+  getAllMusic,
+  getMusic,
+  getMusicById,
+  queryFilter,
+} from '../controllers/music';
 
 const router = express.Router();
 
-router.get('/', getMusic);
+router.get('/', queryFilter, getAllMusic);
+
+router.get('/:id', getMusicById, getMusic);
 
 router.post('/', createMusic);
-
 
 export default router;

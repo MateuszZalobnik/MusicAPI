@@ -4,7 +4,6 @@ import './db-config';
 import bodyParser from 'body-parser';
 import musicRouter from './routes/music';
 import artistRouter from './routes/artist';
-import testRouter from './routes/test';
 import cors from 'cors';
 
 const app = express();
@@ -19,8 +18,6 @@ app.use(
 app.use('/music', musicRouter);
 
 app.use('/artist', artistRouter);
-
-app.use('/test', testRouter);
 
 app.get('/', (req, res) => {
   res.send('home');
