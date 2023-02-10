@@ -9,7 +9,6 @@ require("./db-config");
 const body_parser_1 = __importDefault(require("body-parser"));
 const music_1 = __importDefault(require("./routes/music"));
 const artist_1 = __importDefault(require("./routes/artist"));
-const test_1 = __importDefault(require("./routes/test"));
 const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5000;
@@ -20,7 +19,6 @@ app.use((0, cors_1.default)({
 }));
 app.use('/music', music_1.default);
 app.use('/artist', artist_1.default);
-app.use('/test', test_1.default);
 app.get('/', (req, res) => {
     res.send('home');
 });
