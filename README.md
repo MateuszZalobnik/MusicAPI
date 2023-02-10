@@ -1,5 +1,5 @@
 # Backend REPO 
-## [Music API]()
+## [Music API](https://spectacular-cheesecake-7e4fa4.netlify.app/)
 With our web app, developers and DJs alike have access to the tools and information they need to succeed in their respective fields. Whether you're looking to build a music-related application or take your DJ skills to the next level, our platform has everything you need to make your vision a reality.
 
 ## [Frontend REPO](https://github.com/MateuszZalobnik/music-api-page)
@@ -25,9 +25,9 @@ Next.js 13v
 Styled Components
 
 
-## [Demo]()
+## [Demo](https://spectacular-cheesecake-7e4fa4.netlify.app/)
 
-## [Docs]()
+## [Docs](https://spectacular-cheesecake-7e4fa4.netlify.app/Docs)
 
 ### Endpoints
 ```
