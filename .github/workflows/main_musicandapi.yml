@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,4 +53,4 @@ jobs:
           app-name: 'musicandapi'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9C59FE32B6D345F98B9BEE89B5AB8E14 }}
-          package: .
+          package: ./dist
